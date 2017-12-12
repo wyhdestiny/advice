@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="format-detection" content="telephone=yes" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<title></title>
+		<link rel="stylesheet" href="rester.css" />
+		<style type="text/css">
+			body,
+			html{
+				width:100%;
+				height:100%;
+			}
+			.container-fluid {
+				width:100%;
+				height:100%;
+			}
+			.forBg{
+				width: 100%;
+			    height: auto;
+			    overflow: hidden;
+				background: url(img/bg.png) no-repeat;
+				background-size: 100% 100%;
+				padding-bottom:98px;
+			}
+			.advCenter{
+				width:100%;
+				height:auto;
+				overflow: hidden;
+			}
+			.adviceLeft {
+				color: white;
+				margin-top: 135px;
+			}
+			
+			.advLogo {
+				background-size: cover;
+			}
+			
+			.textLine {
+				width: 100%;
+			}
+			
+			.suggest {
+				display: inline-block;
+			}
+			
+			.opportunity {
+				display: inline-block;
+			}
+			
+			.restriction {
+				display: inline-block;
+			}
+			
+			.get {
+				margin-top: 25px;
+			}
+			
+			.getIcon {
+				float: left;
+			}
+			
+			.getText {
+				font-style: italic;
+				float: left;
+				margin-left: 20px;
+			}
+			
+			.adviceRight {
+				background: url(img/ingbg.png) no-repeat;
+				background-size: 100% 100%;
+				margin-top: 110px;
+				min-height:634px;
+			}
+			.advForm{
+				width:100%;
+			}
+			.subTitle {
+				font-weight: bold;
+				color: #3f9adb;
+				font-size: 22px;
+			}
+			
+			.subSuggest {
+				font-size: 14px;
+				color: #666666;
+				line-height: 25px;
+			}
+			
+			.subEmail {
+				width: 100%;
+			}
+			
+			.emailAds {
+				width: 100%;
+				padding: 6px 0;
+				border: none;
+				border-bottom: 1px solid #e6e6e6;
+			}
+			
+			.emailAds::-webkit-input-placeholder {
+				color: #999;
+			}
+			
+			.subBitcoin {
+				width: 100%;
+			}
+			
+			.bitcoinAds {
+				width: 100%;
+				padding: 6px 0;
+				border: none;
+				border-bottom: 1px solid #e6e6e6;
+			}
+			
+			.bitcoinAds::-webkit-input-placeholder {
+				color: #999;
+			}
+			
+			.textareaAds {
+				width: 100%;
+				border: 1px solid #e6e6e6;
+				padding: 8px 0;
+				text-indent: 10px;
+			}
+			
+			.subBtn {
+				width: 100%;
+			}
+			
+			.submit {
+				width: 100%;
+				border: none;
+				background: #3f9adb;
+				color: white;
+				padding: 12px 0;
+				font-size: 16px;
+			}
+			
+			.aubDetail {
+				width: 100%;
+				font-size: 12px;
+				color: #fb8a13;
+			}
+			
+			.goBack {
+				top: 50px;
+				left: 6%;
+			}
+			
+			.backImg {
+				background-size: cover;
+			}
+			
+			@media (min-width:256px) and (max-width:319px) {
+				.body_center {
+					width: 90%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:100%;
+				    padding: 0 10%;
+				}
+				.advLogo {
+				    width: 230px;
+				    height: 64px;
+				    }
+				.wanted {
+					font-size: 28px;
+					padding-top: 20px;
+				}
+				.suggest {
+				    font-size: 19px;
+				    padding-top: 20px;
+				}
+				.opportunity {
+					font-size: 21px;
+					padding-top: 25px;
+				}
+				.restriction {
+				    font-size: 19px;
+				    padding-top: 31px;
+				}
+				.getIcon {
+				    width: 50px;
+				    height:82px;
+				}
+				.get {
+				    line-height: 112px;
+				}
+				.getText {
+				    font-size: 20px;
+				}
+				.adviceRight {
+					width: 80%;
+				    padding: 37px 39px 45px 27px;
+				}
+				.subTitle {
+					padding-top: 2px;
+				}
+				.subSuggest {
+					padding-top: 17px;
+				}
+				.subEmail {
+				    margin-top: 20px;
+				}
+				.subBitcoin {
+				    margin-top: 18px;
+				}
+				.textareaAds {
+				    margin-top: 35px;
+				    height: 120px;
+				}
+				.subBtn {
+				    margin-top: 20px;
+				}
+				.aubDetail {
+				    margin-top: 15px;
+				}
+				.backImg {
+				    width: 23px;
+				    height: 25px;
+				}
+			}
+			
+			@media (min-width:320px) and (max-width:413px) {
+				.body_center {
+					width: 90%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:100%;
+				    padding: 0 10%;
+				}
+				.advLogo {
+				    width: 230px;
+				    height: 64px;
+				    }
+				.wanted {
+					font-size: 28px;
+					padding-top: 20px;
+				}
+				.suggest {
+				    font-size: 19px;
+				    padding-top: 20px;
+				}
+				.opportunity {
+					font-size: 21px;
+					padding-top: 25px;
+				}
+				.restriction {
+				    font-size: 19px;
+				    padding-top: 31px;
+				}
+				.getIcon {
+				    width:48px;
+				    height: 83px;
+				}
+				.get {
+				    line-height: 112px;
+				}
+				.getText {
+				    font-size:26px;
+				}
+				.adviceRight {
+					width: 80%;
+				    padding: 37px 39px 45px 27px;
+				}
+				.subTitle {
+					padding-top: 2px;
+				}
+				.subSuggest {
+					padding-top: 17px;
+				}
+				.subEmail {
+				    margin-top: 20px;
+				}
+				.subBitcoin {
+				    margin-top: 18px;
+				}
+				.textareaAds {
+				    margin-top: 35px;
+				    height: 120px;
+				}
+				.subBtn {
+				    margin-top: 20px;
+				}
+				.aubDetail {
+				    margin-top: 15px;
+				}
+				.backImg {
+				    width: 23px;
+				    height: 25px;
+				}
+			}
+			
+			@media (min-width:414px) and (max-width:550px) {
+				.body_center {
+					width: 90%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:100%;
+				    padding: 0 10%;
+				}
+				.advLogo {
+				    width: 230px;
+				    height: 64px;
+				    }
+				.wanted {
+					font-size: 28px;
+					padding-top: 20px;
+				}
+				.suggest {
+				    font-size: 19px;
+				    padding-top: 20px;
+				}
+				.opportunity {
+					font-size: 21px;
+					padding-top: 25px;
+				}
+				.restriction {
+				    font-size: 19px;
+				    padding-top: 31px;
+				}
+				.getIcon {
+				    width: 59px;
+				    height: 82px;
+				}
+				.get {
+				    line-height: 112px;
+				}
+				.getText {
+				    font-size: 32px;
+				}
+				.adviceRight {
+					width: 80%;
+				    padding: 37px 39px 45px 27px;
+				}
+				.subTitle {
+					padding-top: 2px;
+				}
+				.subSuggest {
+					padding-top: 17px;
+				}
+				.subEmail {
+				    margin-top: 20px;
+				}
+				.subBitcoin {
+				    margin-top: 18px;
+				}
+				.textareaAds {
+				    margin-top: 35px;
+				    height: 120px;
+				}
+				.subBtn {
+				    margin-top: 20px;
+				}
+				.aubDetail {
+				    margin-top: 15px;
+				}
+				.backImg {
+				    width: 23px;
+				    height: 25px;
+				}
+			}
+			
+			@media (min-width:551px) and (max-width:750px) {
+				.body_center {
+					width: 80%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:100%;
+				    padding: 0 10%;
+				}
+				.advLogo {
+				    width: 230px;
+				    height: 64px;
+				    }
+				.wanted {
+					font-size: 28px;
+					padding-top: 20px;
+				}
+				.suggest {
+				    font-size: 19px;
+				    padding-top: 20px;
+				}
+				.opportunity {
+					font-size: 21px;
+					padding-top: 25px;
+				}
+				.restriction {
+				    font-size: 19px;
+				    padding-top: 31px;
+				}
+				.getIcon {
+				    width: 80px;
+				    height: 110px;
+				}
+				.get {
+				    line-height: 112px;
+				}
+				.getText {
+				    font-size: 40px;
+				}
+				.adviceRight {
+					width: 80%;
+				    padding: 37px 39px 45px 27px;
+				}
+				.subTitle {
+					padding-top: 2px;
+				}
+				.subSuggest {
+					padding-top: 17px;
+				}
+				.subEmail {
+				    margin-top: 20px;
+				}
+				.subBitcoin {
+				    margin-top: 18px;
+				}
+				.textareaAds {
+				    margin-top: 35px;
+				    height: 120px;
+				}
+				.subBtn {
+				    margin-top: 20px;
+				}
+				.aubDetail {
+				    margin-top: 15px;
+				}
+				.backImg {
+				    width: 23px;
+				    height: 25px;
+				}
+			}
+			
+			@media (min-width:751px) and (max-width:850px) {
+				.body_center {
+					width: 80%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:100%;
+				    padding: 0 10%;
+				}
+				.advLogo {
+				    width: 230px;
+				    height: 64px;
+				    }
+				.wanted {
+					font-size: 28px;
+					padding-top: 20px;
+				}
+				.suggest {
+				    font-size: 19px;
+				    padding-top: 20px;
+				}
+				.opportunity {
+					font-size: 21px;
+					padding-top: 25px;
+				}
+				.restriction {
+				    font-size: 19px;
+				    padding-top: 31px;
+				}
+				.getIcon {
+				    width: 80px;
+				    height: 110px;
+				}
+				.get {
+				    line-height: 112px;
+				}
+				.getText {
+				    font-size: 40px;
+				}
+				.adviceRight {
+					width: 80%;
+				    padding: 37px 39px 45px 27px;
+				}
+				.subTitle {
+					padding-top: 2px;
+				}
+				.subSuggest {
+					padding-top: 17px;
+				}
+				.subEmail {
+				    margin-top: 20px;
+				}
+				.subBitcoin {
+				    margin-top: 18px;
+				}
+				.textareaAds {
+				    margin-top: 35px;
+				    height: 120px;
+				}
+				.subBtn {
+				    margin-top: 20px;
+				}
+				.aubDetail {
+				    margin-top: 15px;
+				}
+				.backImg {
+				    width: 23px;
+				    height: 25px;
+				}
+			}
+			
+			@media (min-width:851px) and (max-width:1050px) {
+				.body_center {
+					width: 80%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:47%;
+				}
+				.advLogo {
+				    width: 230px;
+				    height: 64px;
+				    }
+				.wanted {
+					font-size: 28px;
+					padding-top: 20px;
+				}
+				.suggest {
+				    font-size: 19px;
+				    padding-top: 20px;
+				}
+				.opportunity {
+					font-size: 21px;
+					padding-top: 25px;
+				}
+				.restriction {
+				    font-size: 19px;
+				    padding-top: 31px;
+				}
+				.getIcon {
+				    width: 80px;
+				    height: 110px;
+				}
+				.get {
+				    line-height: 112px;
+				}
+				.getText {
+				    font-size: 40px;
+				}
+				.adviceRight {
+					width: 38%;
+				    padding: 37px 39px 45px 27px;
+				}
+				.subTitle {
+					padding-top: 2px;
+				}
+				.subSuggest {
+					padding-top: 17px;
+				}
+				.subEmail {
+				    margin-top: 20px;
+				}
+				.subBitcoin {
+				    margin-top: 18px;
+				}
+				.textareaAds {
+				    margin-top: 35px;
+				    height: 120px;
+				}
+				.subBtn {
+				    margin-top: 20px;
+				}
+				.aubDetail {
+				    margin-top: 15px;
+				}
+				.backImg {
+				    width: 23px;
+				    height: 25px;
+				}
+			}
+			
+			@media (min-width:1051px) and (max-width:1250px) {
+				.body_center {
+					width: 80%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:46%;
+				}
+				.advLogo {
+				    width: 230px;
+				    height: 64px;
+				    }
+				.wanted {
+					font-size: 28px;
+					padding-top: 20px;
+				}
+				.suggest {
+				    font-size: 19px;
+				    padding-top: 20px;
+				}
+				.opportunity {
+					font-size: 21px;
+					padding-top: 25px;
+				}
+				.restriction {
+				    font-size: 19px;
+				    padding-top: 31px;
+				}
+				.getIcon {
+				    width: 80px;
+				    height: 110px;
+				}
+				.get {
+				    line-height: 112px;
+				}
+				.getText {
+				    font-size: 40px;
+				}
+				.adviceRight {
+					width:32%;
+				    padding: 37px 39px 45px 27px;
+				}
+				.subTitle {
+					padding-top: 2px;
+				}
+				.subSuggest {
+					padding-top: 17px;
+				}
+				.subEmail {
+				    margin-top: 20px;
+				}
+				.subBitcoin {
+				    margin-top: 18px;
+				}
+				.textareaAds {
+				    margin-top: 35px;
+				    height: 120px;
+				}
+				.subBtn {
+				    margin-top: 20px;
+				}
+				.aubDetail {
+				    margin-top: 15px;
+				}
+				.backImg {
+				    width: 23px;
+				    height: 25px;
+				}
+			}
+			
+			@media (min-width:1251px) and (max-width:1300px) {
+				.body_center {
+					width: 80%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:48%;
+				}
+				.advLogo {
+				    width: 230px;
+				    height: 64px;
+				    }
+				.wanted {
+					font-size: 28px;
+					padding-top: 20px;
+				}
+				.suggest {
+				    font-size: 19px;
+				    padding-top: 20px;
+				}
+				.opportunity {
+					font-size: 21px;
+					padding-top: 25px;
+				}
+				.restriction {
+				    font-size: 19px;
+				    padding-top: 31px;
+				}
+				.getIcon {
+				    width: 80px;
+				    height: 110px;
+				}
+				.get {
+				    line-height: 112px;
+				}
+				.getText {
+				    font-size: 40px;
+				}
+				.adviceRight {
+					width:32%;
+				    padding: 37px 39px 45px 27px;
+				}
+				.subTitle {
+					padding-top: 2px;
+				}
+				.subSuggest {
+					padding-top: 17px;
+				}
+				.subEmail {
+				    margin-top: 20px;
+				}
+				.subBitcoin {
+				    margin-top: 18px;
+				}
+				.textareaAds {
+				    margin-top: 35px;
+				    height: 120px;
+				}
+				.subBtn {
+				    margin-top: 20px;
+				}
+				.aubDetail {
+				    margin-top: 15px;
+				}
+				.backImg {
+				    width: 23px;
+				    height: 25px;
+				}
+			}
+			
+			@media (min-width:1301px) and (max-width:1500px) {
+				.body_center {
+					width: 85%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:48%;
+				}
+				.advLogo {
+				    width: 230px;
+				    height: 64px;
+				    }
+				.wanted {
+					font-size: 28px;
+					padding-top: 20px;
+				}
+				.suggest {
+				    font-size: 19px;
+				    padding-top: 20px;
+				}
+				.opportunity {
+					font-size: 21px;
+					padding-top: 25px;
+				}
+				.restriction {
+				    font-size: 19px;
+				    padding-top: 31px;
+				}
+				.getIcon {
+				    width: 80px;
+				    height: 110px;
+				}
+				.get {
+				    line-height: 112px;
+				}
+				.getText {
+				    font-size: 40px;
+				}
+				.adviceRight {
+					width:32%;
+				    padding: 37px 39px 45px 27px;
+				}
+				.subTitle {
+					padding-top: 2px;
+				}
+				.subSuggest {
+					padding-top: 17px;
+				}
+				.subEmail {
+				    margin-top: 20px;
+				}
+				.subBitcoin {
+				    margin-top: 18px;
+				}
+				.textareaAds {
+				    margin-top: 35px;
+				    height: 120px;
+				}
+				.subBtn {
+				    margin-top: 20px;
+				}
+				.aubDetail {
+				    margin-top: 15px;
+				}
+				.backImg {
+				    width: 23px;
+				    height: 25px;
+				}
+			}
+			
+			@media (min-width:1501px) and (max-width:1700px) {
+				.body_center {
+					width: 79%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:48%;
+				}
+				.advLogo {
+				    width: 230px;
+				    height: 64px;
+				    }
+				.wanted {
+					font-size: 28px;
+					padding-top: 20px;
+				}
+				.suggest {
+				    font-size: 19px;
+				    padding-top: 20px;
+				}
+				.opportunity {
+					font-size: 21px;
+					padding-top: 25px;
+				}
+				.restriction {
+				    font-size: 19px;
+				    padding-top: 31px;
+				}
+				.getIcon {
+				    width: 80px;
+				    height: 110px;
+				}
+				.get {
+				    line-height: 112px;
+				}
+				.getText {
+				    font-size: 40px;
+				}
+				.adviceRight {
+					width:32%;
+				    padding: 37px 39px 45px 27px;
+				}
+				.subTitle {
+					padding-top: 2px;
+				}
+				.subSuggest {
+					padding-top: 17px;
+				}
+				.subEmail {
+				    margin-top: 20px;
+				}
+				.subBitcoin {
+				    margin-top: 18px;
+				}
+				.textareaAds {
+				    margin-top: 35px;
+				    height: 120px;
+				}
+				.subBtn {
+				    margin-top: 20px;
+				}
+				.aubDetail {
+				    margin-top: 15px;
+				}
+				.backImg {
+				    width: 23px;
+				    height: 25px;
+				}
+			}
+			
+			@media (min-width:1701px) and (max-width:1920px) {
+				.body_center {
+					width: 65%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:48%;
+				}
+				.advLogo {
+				    width: 300px;
+				    height: 75px;
+				    }
+				.wanted {
+					font-size: 34px;
+					padding-top: 29px;
+				}
+				.suggest {
+				    font-size: 22px;
+				    padding-top: 30px;
+				}
+				.opportunity {
+					font-size: 27px;
+					padding-top: 30px;
+				}
+				.restriction {
+				    font-size: 22px;
+				    padding-top: 39px;
+				}
+				.getIcon {
+				    width: 103px;
+				    height: 129px;
+				}
+				.get {
+				    line-height: 130px;
+				}
+				.getText {
+				    font-size:38px;
+				}
+				.adviceRight {
+					width:32%;
+				    padding: 37px 39px 70px 27px;
+				}
+				.subTitle {
+					padding-top: 14px;
+				}
+				.subSuggest {
+					padding-top: 40px;
+				}
+				.subEmail {
+				    margin-top: 40px;
+				}
+				.subBitcoin {
+				    margin-top: 28px;
+				}
+				.textareaAds {
+				    margin-top: 52px;
+				    height: 152px;
+				}
+				.subBtn {
+				    margin-top: 35px;
+				}
+				.aubDetail {
+				    margin-top: 20px;
+				}
+				.backImg {
+				    width: 30px;
+				    height: 32px;
+				}
+			}
+			
+			@media (min-width:1921px) {
+				.body_center {
+					width: 65%;
+					margin: 0 auto;
+				}
+				.adviceLeft{
+					width:48%;
+				}
+				.advLogo {
+				    width: 300px;
+				    height: 75px;
+				    }
+				.wanted {
+					font-size: 34px;
+					padding-top: 29px;
+				}
+				.suggest {
+				    font-size: 22px;
+				    padding-top: 30px;
+				}
+				.opportunity {
+					font-size: 27px;
+					padding-top: 30px;
+				}
+				.restriction {
+				    font-size: 22px;
+				    padding-top: 39px;
+				}
+				.getIcon {
+				    width: 103px;
+				    height: 129px;
+				}
+				.get {
+				    line-height: 130px;
+				}
+				.getText {
+				    font-size: 46px;
+				}
+				.adviceRight {
+					width:32%;
+				    padding: 37px 39px 70px 27px;
+				}
+				.subTitle {
+					padding-top: 14px;
+				}
+				.subSuggest {
+					padding-top: 40px;
+				}
+				.subEmail {
+				    margin-top: 40px;
+				}
+				.subBitcoin {
+				    margin-top: 28px;
+				}
+				.textareaAds {
+				    margin-top: 52px;
+				    height: 152px;
+				}
+				.subBtn {
+				    margin-top: 35px;
+				}
+				.aubDetail {
+				    margin-top: 20px;
+				}
+				.backImg {
+				    width: 32px;
+				    height: 30px;
+				}
+			}
+			.emailworn{
+				color:red;
+				font-size: 14px;
+				top:7px;
+				right:5px;
+				display: none;
+			}
+			.bitworn{
+				color:red;
+				font-size: 14px;
+				top:7px;
+				right:5px;
+				display: none;
+			}
+			.areaworn{
+				color:red;
+				font-size: 14px;
+				float: right;
+				display: none;
+			}
+			
+			.successful{
+				width:100%;
+				text-align:center;
+			}
+			.correct{
+				width:140px;
+				height:140px;
+				margin-top:120px;
+			}
+			.submission{
+			    font-size: 22px;
+			    color: #3f9adb;
+			    font-weight: bold;
+			    padding-top: 25px;
+			}
+			.support{
+			    font-size: 15px;
+			    color: #333;
+			    padding-top: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="forBg rel">
+				<div class="goBack abs cur">
+					<img src="img/back.png" class="backImg" alt="" />
+				</div>
+				<div class="body_center">
+					<div class="advCenter">
+						<div class="adviceLeft fl">
+							<img src="img/sblogo.png" class="advLogo" alt="" />
+							<p class="wanted">Wanted:Good Tips for Our Website!</p>
+							<div class="textLine">
+								<p class="suggest"><span class="advPoint"></span>Please submit your suggestions about SoonBit.com after browsing the site. </p>
+							</div>
+							<div class="textLine">
+								<p class="opportunity"><span class="advPoint"></span>There will be the opportunity of earning <span>1 Bitcoin</span> per person at most if your suggestions are adopted. </p>
+							</div>
+							<div class="textLine">
+								<p class="restriction"><span class="advPoint"></span>There is no restriction on the number of people involved. </p>
+							</div>
+							<div class="get">
+								<img src="img/bitcoins.png" class="getIcon" alt="" />
+								<span class="getText">Get 1 Bitcoin! !</span>
+							</div>
+						</div>
+						<div class="adviceRight fr">
+							<div class="advForm">
+								<p class="subTitle">Your advice</p>
+								<p class="subSuggest">You suggestions are important for us to help improve our service!</p>
+								<div class="subEmail rel">
+									<input type="email" class="emailAds" placeholder="Your email address" />
+									<span class="emailworn abs">格式错误</span>
+								</div>
+								<div class="subBitcoin rel">
+									<input type="text" class="bitcoinAds" placeholder="Your bitcoin address" />
+									<span class="bitworn abs">格式错误</span>
+								</div>
+								<textarea class="textareaAds" name="" rows="" cols="" placeholder="You advice"></textarea>
+								<span class="areaworn rel">格式错误</span>
+								<div class="subBtn">
+									<button class="submit">submit</button>
+								</div>
+								<p class="aubDetail">Please confirm your email address and bitcoin address to make sure that we could contact you and remit you the reward successfully.</p>
+								
+							</div>
+							<div class="successful" style="display: none;">
+								<img src="img/succful.png" class="correct" alt="" />
+								<p class="submission">Successful Submission</p>
+								<p class="support">Thank you for your support!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="jquery-2.1.4.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".submit").click(function(){
+					$(".advForm").css("display", "none");
+					$(".successful").css("display", "block");
+				})
+				/*var emailRex = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+				$(".emailAds").focus(function(){
+					$(".emailAds").css("border", "1px solid #e6e6e6");
+				})
+				$(".emailAds").blur(function(){
+					$(".emailAds").css("border-bottom", "1px solid #e6e6e6");
+				})*/
+			})
+		</script>
+	</body>
+
+
+</html>
